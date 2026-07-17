@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <section className="mx-auto max-w-3xl px-5 py-24 text-center"><p className="eyebrow">Erro inesperado</p><h1 className="mt-4 font-serif text-5xl">Não foi possível carregar esta página.</h1><p className="mt-5 leading-7 text-muted">Tente novamente. Se o problema continuar, utilize o canal de contato.</p><button onClick={reset} className="mt-8 min-h-11 rounded-full bg-brand px-6 py-3 font-semibold text-white">Tentar novamente</button></section>; }
