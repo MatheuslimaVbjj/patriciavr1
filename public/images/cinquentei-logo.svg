@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 238" role="img" aria-labelledby="title desc">
+  <title id="title">Cinquentei e Agora</title>
+  <desc id="desc">Logo do projeto Cinquentei e Agora, por Patrícia Garboni</desc>
+  <g fill="none" stroke="#c2185b" stroke-width="2">
+    <text x="0" y="68" fill="#c2185b" stroke="#5b1734" stroke-width="0.7" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="300" letter-spacing="-3">CINQUENTEI</text>
+    <text x="218" y="139" fill="#c2185b" stroke="#5b1734" stroke-width="0.6" font-family="Brush Script MT, Segoe Script, cursive" font-size="73" font-style="italic">e agora?</text>
+    <path d="M351 137 C330 157, 303 190, 299 215 C296 230, 309 236, 325 228 C345 218, 359 188, 374 151" stroke="#c2185b" stroke-width="3"/>
+  </g>
+  <text x="395" y="160" fill="#c2185b" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">BY PATRÍCIA GARBONI</text>
+</svg>
