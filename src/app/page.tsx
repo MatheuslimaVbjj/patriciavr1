@@ -82,18 +82,17 @@ export default function HomePage() {
           </div>
 
           <div className="interest-rail mt-10 flex snap-x gap-4 overflow-x-auto pb-3 text-center lg:grid lg:grid-cols-3 lg:overflow-visible">
-            {interests.map(([title, text, href], index) => (
+            {interests.map(([title, text, href]) => (
               <Link
                 key={title}
                 href={href}
-                className="interest-card group min-w-[84%] snap-start rounded-[2rem] border border-brand/10 bg-canvas p-6 transition hover:-translate-y-1 hover:border-brand/35 sm:min-w-[48%] lg:min-w-0"
+                className="interest-card group flex min-w-[84%] snap-start flex-col rounded-[2rem] border border-brand/10 bg-canvas p-7 transition hover:-translate-y-1 hover:border-brand/35 sm:min-w-[48%] lg:min-w-0"
               >
-                <div className="flex items-center justify-center gap-4">
-                  <span className="flex size-10 items-center justify-center rounded-full bg-soft-pink text-sm font-extrabold text-brand">0{index + 1}</span>
-                  <span className="text-xl text-brand transition group-hover:translate-x-1">→</span>
-                </div>
-                <h3 className="mt-6 font-serif text-2xl leading-tight">{title}</h3>
-                <p className="mt-4 leading-7 text-muted">{text}</p>
+                <h3 className="font-serif text-2xl leading-tight">{title}</h3>
+                <p className="mt-4 flex-1 leading-7 text-muted">{text}</p>
+                <span className="mt-6 text-sm font-semibold text-brand transition group-hover:translate-x-1">
+                  Explorar tema →
+                </span>
               </Link>
             ))}
           </div>
@@ -124,13 +123,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-4">
-            {conversations.map(([tag, title, text], index) => (
-              <article key={title} className="group rounded-[2rem] border border-brand/10 bg-white p-6 text-center shadow-sm transition hover:border-brand/30">
-                <span className="mx-auto flex size-12 items-center justify-center rounded-full bg-soft-pink font-serif text-lg text-brand">{index + 1}</span>
-                <p className="mt-4 text-xs font-extrabold uppercase tracking-[.15em] text-brand">{tag}</p>
-                <h3 className="mt-2 font-serif text-2xl">{title}</h3>
-                <p className="mt-2 leading-7 text-muted">{text}</p>
-                <span className="mt-4 inline-block text-2xl text-brand transition group-hover:translate-x-1">→</span>
+            {conversations.map(([tag, title, text]) => (
+              <article key={title} className="group rounded-[2rem] border border-brand/10 bg-white p-7 text-center shadow-sm transition hover:border-brand/30">
+                <p className="text-xs font-extrabold uppercase tracking-[.15em] text-brand">{tag}</p>
+                <h3 className="mt-3 font-serif text-2xl">{title}</h3>
+                <p className="mt-3 leading-7 text-muted">{text}</p>
+                <span className="mt-5 inline-block text-sm font-semibold text-brand transition group-hover:translate-x-1">Ver conversa →</span>
               </article>
             ))}
           </div>
