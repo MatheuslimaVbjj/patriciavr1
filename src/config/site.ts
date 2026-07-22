@@ -3,7 +3,7 @@ export const siteConfig = {
   projectName: "Cinquentei e Agora",
   description: "Menopausa sem tabus, autoestima, longevidade e novos começos depois dos 50. Um espaço de conversa, informação e protagonismo feminino.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://patriciavr1.vercel.app",
-  portraitUrl: "/images/patricia-garboni-portrait.webp",
+  portraitUrl: "/images/patricia-garboni-portrait.svg",
   hotmartUrl: process.env.NEXT_PUBLIC_HOTMART_URL || "https://pay.hotmart.com/CINQUENTEI-DEMO",
   locale: "pt_BR",
   language: "pt-BR",
